@@ -19,8 +19,13 @@ const name = 'John';
 // var x = 10;
 // var x = 20;
 
-function add(){
-    var x = 30;
-    console.log(x);
-}
-console.log(x);
+// function add(){
+//     var x = 30;
+//     console.log(x);
+// }
+// console.log(x);
+
+// const a = 10;
+// const a = 20;
+
+
