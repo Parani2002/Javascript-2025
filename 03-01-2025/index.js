@@ -15,3 +15,12 @@ console.log('Welcome to node js');
 console.log(y);
 
 const name = 'John';
+
+// var x = 10;
+// var x = 20;
+
+function add(){
+    var x = 30;
+    console.log(x);
+}
+console.log(x);
