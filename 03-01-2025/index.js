@@ -27,5 +27,6 @@ const name = 'John';
 
 // const a = 10;
 // const a = 20;
-
+const arr = [1,2,3];
+const arr = 
 
