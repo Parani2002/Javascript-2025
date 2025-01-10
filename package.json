@@ -1,0 +1,17 @@
+{
+  "name": "javascript2025",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node first"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "paranitharan",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "number-to-cyrillic": "^2.7.0"
+  }
+}
