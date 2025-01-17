@@ -34,5 +34,24 @@ names.forEach(element => {
     
 });
 
+const person = {
+    firstname:"Paranitharan",
+    lastname:"Suntharalingam",
+    age:20,
+    address:{
+        addLine1:"Sabapathy Road",
+        city:"Jaffna",
+
+    }
+}
+console.log(person.firstname);
+console.log(person.lastname);
+console.log(person.address.city);
+
+
+
+
+
+
 
 
