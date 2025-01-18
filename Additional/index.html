@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <label for="input1">First Number</label><br><br>
+    <input type="text" id="input1" name="input1"><br><br>
+    <label for="input2">Second Number</label><br><br>
+    <input type="text" id="input2" name="input2"><br><br>
+
+    <h2 id="result"></h2>
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <script>
+        function add(){
+            var input1 = document.getElementById('input1').value;
+            var input2 = document.getElementById('input2').value;
+            if (isNaN(input1) || isNaN(input2)) {
+                alert("Please enter a number");
+            }else if(input1 == "" || input2 == ""){
+                alert("Please enter a number"); 
+            }else{
+                var result = parseInt(input1) + parseInt(input2);
+                document.getElementById('result').innerHTML = result;
+            }
+          
+        }
+        function subtract(){
+            var input1 = document.getElementById('input1').value;
+            var input2 = document.getElementById('input2').value;
+            if (isNaN(input1) || isNaN(input2)) {
+                alert("Please enter a number");
+            }else{
+                var result = parseInt(input1) - parseInt(input2);
+                document.getElementById('result').innerHTML = result;
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>
