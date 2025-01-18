@@ -1,9 +1,11 @@
-const display = function(){
-    return "Hello World";
-}
+// const display = function(){
+//     return "Hello World";
+// }
 
-const add = function(a,b){
-    return a+b;
-}
+// const add = function(a,b){
+//     return a+b;
+// }
 
-module.exports = {display,add}
+// module.exports = {display,add}
+
+const {add, substract, multiply, divide, power} = require('./index')
