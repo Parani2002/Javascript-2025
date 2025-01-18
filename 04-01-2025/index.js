@@ -48,6 +48,11 @@ console.log(person.firstname);
 console.log(person.lastname);
 console.log(person.address.city);
 
+const ages = [20,30,40];
+const a = ages.reduce((total,age) => total = total * age)
+console.log(a);
+
+
 
 
 
