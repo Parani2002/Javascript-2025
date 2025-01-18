@@ -31,7 +31,7 @@ const divide = (a,b) => {
     return a/b;
 }
 const power = (a,b) => {
-    return a**b;
+    return Math.pow(a,b);
 }
 
 module.exports = {add, substract, multiply, divide, power};
