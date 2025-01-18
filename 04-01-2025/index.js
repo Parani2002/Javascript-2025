@@ -49,8 +49,13 @@ console.log(person.lastname);
 console.log(person.address.city);
 
 const ages = [20,30,40];
-const a = ages.reduce((total,age) => total = total * age)
+const a = ages.reduce((total,age) => total = total * age,0)
+//anything multiply by 0 is 0
 console.log(a);
+
+const b = ages.reduce((total,age) => total = total * age,1)
+console.log(b);
+
 
 
 
