@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .error{
+        display: none;
+    }
+</style>
 <body>
     <h1>Calculator</h1>
     <label for="input1">First Number</label><br><br>
@@ -12,6 +17,7 @@
     <input type="text" id="input2" name="input2"><br><br>
 
     <h2 id="result"></h2>
+    <h3 class="error"></h3>
 
     <button onclick="add()">Add</button>
     <button onclick="subtract()">Subtract</button>
@@ -22,7 +28,9 @@
             var input1 = document.getElementById('input1').value;
             var input2 = document.getElementById('input2').value;
             if (isNaN(input1) || isNaN(input2)) {
-                alert("Please enter a number");
+                document.querySelector('.error').style.display = 'block';
+                document.querySelector('.error').style.color = 'red';
+                document.querySelector('.error').innerHTML = "Please enter a number";
             }else if(input1 == "" || input2 == ""){
                 alert("Please enter a number"); 
             }else{
