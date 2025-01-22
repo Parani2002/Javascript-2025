@@ -13,5 +13,8 @@
   "description": "",
   "dependencies": {
     "number-to-cyrillic": "^2.7.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }
