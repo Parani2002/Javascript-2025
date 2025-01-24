@@ -23,7 +23,8 @@ li{
         @apply bg-gray-100 p-2;
     }
     li{
-        @apply bg-gray flex  p-2 mr-8;
+        @apply bg-gray flex-row justify-around align-middle;
     }
+    
 
 }
