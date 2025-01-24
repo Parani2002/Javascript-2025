@@ -1,17 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.btnDelete{
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-li{
-    list-style: none;
-    
-}
+
 @layer components{
     .btnDelete{
         @apply bg-red-500 text-white px-2 py-1 rounded cursor-pointer;
@@ -20,10 +10,13 @@ li{
         @apply bg-blue-500 text-white px-4 py-1 rounded cursor-pointer;
     }
     .list{
-        @apply bg-gray-100 p-2;
+        @apply bg-gray-100 p-2 flex justify-between;
     }
     li{
-        @apply bg-gray flex-row justify-around align-middle;
+        @apply bg-gray-100 flex justify-between;
+    }
+    p{
+        @apply text-gray-800 flex;
     }
     
 

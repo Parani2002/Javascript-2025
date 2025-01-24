@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.btnAdd').click(function(){
         var input = $('#input1').val();
         if(input){
-            $("ul").append('<li><p>' + input + '</p><button class="btnDelete">Delete</button></li>');
+            $("ul").append('<li><p>' + input + '</p><button class="btnDelete">Delete</button></li></br>');
             $('#input1').val('');
             $('.count').text($('li').length);
         }else{
