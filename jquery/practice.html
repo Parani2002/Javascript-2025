@@ -30,6 +30,11 @@ $('.btnClick').click(function(){
     $('h1').text(count);
     $('.container').append('<p>Paragraph' + count + '</p>');
 });
+$('.btnClick').hover(function(){
+    $('.content').css('background-color', 'red');
+    $('.content').width('300px'),3000
+
+});
 
    
 })
