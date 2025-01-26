@@ -1,8 +1,12 @@
 // we can use the $ or jQuery sign to call the jQuery function
-$('document').ready(function(){
+$(document).ready(function(){
 
 })
-//id selector
+jQuery(document).ready(function(){
+
+})
+
+//-- id selector
 $('#input1').val();
 $('#input1').text();
 
@@ -18,6 +22,9 @@ $('p').text();
 //Attribute selector
 $('[placeholder]').hide();
 $('[name = "input1"]').hide();
+
+//Descendent selector
+$('.container p').text();
 
 //add content to HTML
 $('p').append('Hello World');
