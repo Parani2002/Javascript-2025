@@ -1,18 +1,19 @@
 $(document).ready(function(){
+    //Add task to list
     $('.btnAdd').click(function(){
-        var input = $('#input1').val();
+        var input = $('#input1').val(); // Get the value of the input field
         if(input){
             $("ul").append('<li><p>' + input + '</p><button class="btnDelete">Delete</button></li>');
             $('#input1').val('');
             $('.count').text($('li').length);
         }else{
-            $('.alert').show('slow');
+            alert('Please enter a task'); // If the input field is empty, display an alert
             $('#input1').focus();
-            $('.alert').hide('slow');
         }
     })
+    //Remove task from list - Event delegation
     $('ul').on('click', '.btnDelete', function () {
-        $(this).closest('li').remove();  // Remove the corresponding list item
+        $(this).parent().remove();  // Remove the corresponding list item
         $('.count').text($('li').length); 
     });
 })

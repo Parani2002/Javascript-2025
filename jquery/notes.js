@@ -31,3 +31,11 @@ $('p').append('Hello World');
 
 //remove content from HTML
 $('p').remove('Hello World');
+
+//Event handling
+$('button').click(function(){
+    alert('Button clicked');
+})
+//hover
+//blur
+//on - multiple events
