@@ -4,8 +4,7 @@ function myName(){
     let lastName = "Suntharalingam";
     let fullName = `My Fullname is :${firstName} ${lastName}`;
     console.log(fullName);
-    console.log("-----------------------------------------------");
-    
+    console.log("-----------------------------------------------");   
 }
 myName();
 
@@ -15,13 +14,12 @@ function myName(fname){
     let lastName = "Suntharalingam";
     let fullName = `My Fullname is :${firstName} ${lastName}`;
     console.log(fullName);
-    
-    console.log("-----------------------------------------------");
-    
+    console.log("-----------------------------------------------");  
 }
 myName("Parani");
 myName("Siva");
 myName("Saravanan");
+
 
 //Return function
 function myName(fname, lname){
