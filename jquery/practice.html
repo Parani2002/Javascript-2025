@@ -16,10 +16,15 @@
     <div class="content">Hello</div>
     <button class="btnClick">Click me</button>
     <div class="container">
-        <p>Paragraph1</p>
-        <p>Paragraph2</p>
+      <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+      </ul>
     </div>
     <h1>dfre</h1>
+    
 
     <script>
 $(document).ready(function(){
@@ -35,9 +40,13 @@ $('.btnClick').hover(function(){
     $('.content').width('300px'),3000
 
 });
+$('.container li').on('click', function(){
+    console.log($(this).text());
+    $(this).css('color', 'red');
+    
+});
+}); 
 
-   
-})
     </script>
 </body>
 </html>

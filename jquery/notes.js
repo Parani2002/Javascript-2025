@@ -35,7 +35,15 @@ $('p').remove('Hello World');
 //Event handling
 $('button').click(function(){
     alert('Button clicked');
-})
+});
+
+
 //hover
 //blur
-//on - multiple events
+//on - Multiple Events - Event delegation
+$('.container li').on('click', function(){
+    console.log($(this).text());
+    $(this).css('color', 'red'); 
+});
+
+
