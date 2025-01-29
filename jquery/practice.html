@@ -40,11 +40,14 @@ $('.btnClick').hover(function(){
     $('.content').width('300px'),3000
 
 });
-$('.container li').on('click', function(){
-    console.log($(this).text());
-    $(this).css('color', 'red');
-    
 });
+$('.container li').on({mouseenter:function(){
+    $(this).css('color', 'red');
+    $(this).css('font-size', '20px');
+}, mouseleave:function(){    
+    $(this).css('color', '');
+    $(this).css('font-size', '');
+}
 }); 
 
     </script>
