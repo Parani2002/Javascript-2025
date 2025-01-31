@@ -21,6 +21,11 @@ console.log(sumAll(1,2,3,4,5,6,7,8,9,10));
 const sum = (x,y) => x+y;
 
 const substract = (x,y) => x-y;
+//setting default value for parameters.
 
+
+const getFullName = (fname="Parani",lname="Tharan") => `${fname} ${lname}`;
+console.log(getFullName());
+ getFullName();
 
 
