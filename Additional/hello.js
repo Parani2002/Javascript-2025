@@ -41,11 +41,31 @@ const {display, add} = require('./index')
 //    if(i === 3) break;
 //     console.log(i);
 // };
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
 
 var a = 10;
-let b ;
+var b ;
+
+
+const ages1 = [20,30,40];
+const ages2 = [...ages1,50,60,70];
+
+console.log(ages1);
+console.log(ages2);
+
+const person = {
+    name:"Parani",
+}
+
+const person1 = {
+    ...person,
+    age:20,
+    city:"Jaffna"
+}
+console.log(person1);
+
+
 
 
 
