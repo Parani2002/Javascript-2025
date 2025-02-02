@@ -1,4 +1,4 @@
-const {display, add} = require('./index')
+// const {display, add} = require('./index')
 
 // console.log(x());
 
@@ -64,6 +64,18 @@ const person1 = {
     city:"Jaffna"
 }
 console.log(person1);
+
+//console.log(5 = "5"); //assignment operator
+console.log(5 == "5"); //loose equality operator
+console.log(5 === "5"); //strict equality operator
+
+console.log("edde");
+const arr1 = [1,2,3,4,5];
+const arr2 = [1,2,3,4,5];
+console.log(arr1 === arr2);
+
+
+
 
 
 
