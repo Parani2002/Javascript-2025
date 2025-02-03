@@ -12,9 +12,13 @@ let arr1 = [10,"Parani",true,null,undefined];
 console.log(typeof arr1); //object
 //In php this array is called index array.
 
-for (let index = 0; index < arr1.length; index++) {
-    const element = arr1[index];
-    console.log(element);  
+//for each loop
+arr1.forEach(element => {
+    console.log(element);
+});
+//enhanced for each loop
+for(const element of arr1){
+    console.log(element);
 }
 
 
