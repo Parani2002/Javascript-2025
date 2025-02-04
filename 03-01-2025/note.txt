@@ -1,0 +1,3 @@
+npm install --save ===> install core dependency.It needs when application runs.Eg- express,body-parse
+
+npm install --save-dev ===> install development dependency.It needs when application developement.Eg-nodemon
