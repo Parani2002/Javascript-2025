@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p class="currDate" onload="displayDate()">Date: </p>
+    <label for="firstname">First Name</label><br>
+    <input type="text" id="firstname" onchange="upperCase()"><br><br>
+  
+    <label for="lastname">Last Name</label><br>
+    <input type="text" id="lastname" onchange="upperCase()"><br><br>
+
+    <label for="dob">Date of Birth</label><br>
+    <input type="date" id="dob" onchange="calculateAge()"><br><br>
+
+    <label for="age">Age</label><br>
+    <input type="text" id="age">
+
+    <script>
+        document.onload = displayDate();
+
+       function upperCase(){
+        document.getElementById('firstname').value = document.getElementById('firstname').value.toUpperCase();
+        document.getElementById('lastname').value = document.getElementById('lastname').value.toUpperCase();
+       }
+       function calculateAge(){
+        var dob = document.getElementById('dob').value;
+        console.log(dob);
+       
+        var dob = new Date(dob);
+        var today = new Date();
+        console.log(today);
+        var age = today.getFullYear() - dob.getFullYear();
+        document.getElementById('age').value = age;
+       }
+       function displayDate(){
+        var today = new Date();
+        console.log(today.getDate());
+        console.log(today.getMonth());
+        console.log(today.getFullYear());
+        //var date = today.getFullYear() + today.getMonth() + today.getDate();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        document.getElementsByClassName('currDate')[0].innerHTML += date;
+       }
+    </script>
+</body>
+</html>
