@@ -6,11 +6,17 @@
   </head>
   <body>
     <h1 class="name">Paranitharan</h1>
-    <p class="fontsize"></p>
+    <p class="fontsize" style="font-size: 20px;"></p>
     <button class="btnIncrease" onclick="increaseSize()">Increase</button>
     <button class="btnDecrease" onclick="decreaseSize()">Decrease</button>
     <button class="btnReset" onclick="reset()">Reset</button>
     <script>
+        var x = document.getElementsByClassName("name")[0];
+        console.log(x);
+        console.log(typeof x);
+
+
+        
      //get font size of the element
       var currentSize = window.getComputedStyle(
         document.getElementsByClassName("name")[0]
