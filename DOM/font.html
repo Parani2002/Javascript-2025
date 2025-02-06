@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Size</title>
+  </head>
+  <body>
+    <h1 class="name">Paranitharan</h1>
+    <p class="fontsize"></p>
+    <button class="btnIncrease" onclick="increaseSize()">Increase</button>
+    <button class="btnDecrease" onclick="decreaseSize()">Decrease</button>
+    <button class="btnReset" onclick="reset()">Reset</button>
+    <script>
+     //get font size of the element
+      var currentSize = window.getComputedStyle(
+        document.getElementsByClassName("name")[0]
+      ).fontSize;
+      console.log(currentSize);
+      console.log(typeof currentSize);
+      var size = currentSize.split("px")[0];
+      console.log(size);
+      console.log(typeof size);
+      //function to decrease the font size
+      function increaseSize(){
+        size = parseInt(size) + 4;
+        document.getElementsByClassName("name")[0].style.fontSize = size + "px";
+        document.getElementsByClassName("fontsize")[0].innerHTML = "Font Size: " + size + "px";
+      }
+
+      function decreaseSize(){
+        size = parseInt(size) - 4;
+        document.getElementsByClassName("name")[0].style.fontSize = size + "px";
+        document.getElementsByClassName("fontsize")[0].innerHTML = "Font Size: " + size + "px";
+      }
+
+      function reset(){
+        document.getElementsByClassName("name")[0].style.fontSize = currentSize;
+      }
+    </script>
+  </body>
+</html>
