@@ -20,7 +20,10 @@
     <input type="text" id="age">
 
     <script>
-        document.onload = displayDate();
+        if(document.readyState === 'complete'){
+            displayDate();
+        }
+        
 
        function upperCase(){
         document.getElementById('firstname').value = document.getElementById('firstname').value.toUpperCase();
