@@ -3,6 +3,10 @@ var input = document.getElementById('task');
 
 
 var addBtn = document.getElementById('addTask');
+//creating delete button element and set attributes.
+const delBtn = document.createElement('button');
+delBtn.setAttribute(id)
+
 addBtn.addEventListener('click', function(){
     var task = document.getElementById('task').value;
     if(task){
@@ -10,6 +14,7 @@ addBtn.addEventListener('click', function(){
         const ul = document.getElementById('taskList');
         li.innerHTML = `<p>${input.value.trim()}</p>`;
         ul.appendChild(li);
+        li.appendChild(delBtn);
         input.value = '';
     } 
 });
