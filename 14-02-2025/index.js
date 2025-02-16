@@ -16,3 +16,5 @@ calc(10,20,add);
 calc(200,100,sub);
 
 setTimeout(() => console.log("This is settimeout function"),3000);
+
+setTimeout(() => console.log("jifiur4hgfuirt4g"),5000);
