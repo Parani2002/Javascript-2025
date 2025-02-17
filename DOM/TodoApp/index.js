@@ -14,7 +14,9 @@ addBtn.addEventListener('click', function(){
         const ul = document.getElementById('taskList');
         li.innerHTML = `<p>${input.value.trim()}</p><button>Delete</button>`;
         ul.appendChild(li);
-       
         input.value = '';
+    }else{
+        alert("Please enter a task...")
+        input.focus();
     }
 });
