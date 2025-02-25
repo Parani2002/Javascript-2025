@@ -8,10 +8,21 @@ var confirmPassword = document.getElementById('confirmPassword');
 
 var btnSubmit = document.getElementById('submit');
 
-btnSubmit.addEventListener('submit', function(){
+btnSubmit.addEventListener('click', function(){
+    console.log(username.value);
+    var p = document.createElement('p');
+    var errorEle = document.getElementsByClassName('error');
+    p.style.color = 'red';
     if(username.value == ''){
-        document.createElement('p').innerHTML = 'Please enter a username';
-
         
+        p.innerHTML = 'Please enter a username!!!';
+        document.getElementById('usernameDiv').appendChild(p);
     }
+    if(email.value == ' '){
+        errorEle.style.display = 'block';
+        p.innerHTML = `Please enter an email!!!`;
+        document.getElementById('emailDiv').appendChild(p);
+    }
+
+
 })
