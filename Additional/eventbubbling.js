@@ -16,7 +16,9 @@ span.addEventListener('click', () => {
 }
 );  
 
-button.addEventListener('click', (e) => {
+button.addEventListener('click', (event) => {
+    event.stopPropagation(); // to stop event bubbling
     console.log('button is clicked');
 }
 );
+
